@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.box {
+    width: 470px;
+    border: 1px solid black;
+}
+img {
+    margin: 30px; auto;
+}
