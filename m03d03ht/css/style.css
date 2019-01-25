@@ -61,7 +61,6 @@ footer{
     text-align: center;
 }
 button {
-    cursor: pointer;
     width: 160px;
     height: 60px;
     border: 1px solid #6c6c6c;;
@@ -70,6 +69,7 @@ button {
     font-size: 20px;
 }
 button:hover {
+    cursor: pointer;
     color: #03a9f4;
     border: 1px solid #03a9f4;;
 }
