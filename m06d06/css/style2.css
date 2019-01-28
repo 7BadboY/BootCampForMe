@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main3 {
+    max-width: 1480px;
+}
+.wrapperSec3 {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+.col {
+    display: inline-block;
+    max-width: 342px;
+    max-height: 202px;
+}
+.linksSec3 {
+}
+mainTextSec3 {
+    margin: 
+}
+.ImgSec3 {
+    margin: 0 auto 45px 0;
+}
+
