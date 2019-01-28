@@ -1,0 +1,81 @@
+.post {
+    width: 960px;
+    outline: 1px solid blue;
+}
+.post p {
+    background-color: teal;
+}
+.post img {
+    opacity: 0.5;
+    float: left;
+    margin: 0 15px 20px 0;
+}
+
+
+
+
+
+
+
+.page-header {
+    outline: 2px solid brown;
+    padding: 20px 0;
+}
+.logo {
+    outline: 2px solid orange;
+    float: left;
+    height: 150px;
+}
+.menu {
+    float: right;
+    width: 300px;
+    outline: 2px solid red;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+.menu li {
+    float: right;
+    background-color: red;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu {
+    float: right;
+    width: 300px;
+    outline: 2px solid red;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+.menu li {
+    float: right;
+    background-color: red;
+}
+
+
+.catalog {
+    width: 1000px;
+    margin: 0 auto;
+}
+.catalog-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.catalog-item {
+    width: 300px;
+    outline: 2px solid #424242;
+    float: left;
+}
+.catalog-item:not(:nth-child(3n)) {
+    margin: 0 50px 0 0;
+}
+/.catalog-item:not(:nth-last-child(-n +3)) {
+    margin-bottom: 50px;
+}

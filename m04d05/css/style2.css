@@ -1,0 +1,52 @@
+body {
+    padding: 30px 20px;
+    background: hsla(130, 80%, 40%, 0,1);
+    counter-reset: v;
+}
+.wrapper {
+    widows: 480px;
+    margin: auto;
+    background: #fff;
+    padding: 20px 10px 20px 30px;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-indent: 2rem;
+    counter-increment: v;
+}
+p::before {
+    content: counter(v, lower-roman);
+    color: red;
+}
+span {
+    color: green;
+}
+h4 {
+    counter-increment: I;
+    text-indent: 2rem;
+}
+h4::after {
+    content: counter(I, lower-roman)
+}
+.wrapper {
+    margin-bottom: 100px;
+    width: 300px;
+    height: 600px;
+    background: linear-gradient(360deg, #111111 1%, #ffffff);
+    background-position: center;
+    background-size: cover;
+}
+.stopColor {
+    margin: 0 auto;
+    width: 900px;
+    height: 400px;
+    background: linear-gradient(90deg,
+     #111111 0%, #111111 20%,
+     #ffffff 20%, #ffffff 40%,
+     #565656 40%, #565656 100%
+     );
+    background-position: center;
+    background-size: cover;
+}
