@@ -2,12 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+    /* outline: 1px solid red; */
 }
 .main3 {
-    max-width: 1480px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 130px 150px 190px;
+    text-decoration: none;
+    background-color: rgb(246, 245, 243);
+    position: relative;
+    overflow: hidden;
 }
 .wrapperSec3 {
-    max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -16,12 +24,52 @@
     max-width: 342px;
     max-height: 202px;
 }
-.linksSec3 {
+.link3 {
+    text-decoration: none;
 }
-mainTextSec3 {
-    margin: 
+.smallTextSec3{
+    font-size: 12pt;
+    color: rgb(255, 109, 109);
+    text-transform: uppercase;
+}
+.bigTextSec3 {
+    font-size: 30pt;
+    margin: 0 auto 50px 0;
+}
+.mainTextSec3 {
+    margin: 0 auto 10px 0;
+    font-size: 15pt;
+    color: rgb(40 , 40, 40);
 }
 .ImgSec3 {
-    margin: 0 auto 45px 0;
+    margin: 0 auto 15px 0;
+    width: 65px;
+    height: 65px;
+    z-index: 3;
 }
+.textSec3 {
+    line-height: 25px;
+    padding: 0 20px 0;
+    font-size: 11pt;
+    color: rgb(110, 110, 109);
+    text-decoration: none;
+    font-weight: 600;
+}
+.cupCoffe {
+    position: absolute;
+    bottom: -141px;
+    right: 100px;
+}
+.penHolder {
+    position: absolute;
+    top: -20px;
+    left: 80px;
+}
+.headPhones {
+    position: absolute;
+    top: -50px;
+    right: 160px;
+}
+
+
 
