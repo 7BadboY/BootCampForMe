@@ -1,0 +1,28 @@
+.wrapper {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: aqua;
+    /* overflow: hidden; */
+    margin: auto;
+}
+.container {
+    max-width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+.ContInner {
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    top: 0;
+    right: -500px;
+    position: absolute;
+    transition: all 2s ease;
+}
+.wrapper:hover .ContInner {
+    /* left: -500px; */
+    transform: translate(-500px);
+    transition: all 2s ease;
+    background-image: url()
+}
