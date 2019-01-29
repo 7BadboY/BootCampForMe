@@ -9,14 +9,18 @@
     width: 100%;
 }
 .colLeft2 {
-    width: 58%; 
+    width: 59%;
+    height: 730px; 
+    margin: -4px -4px 0 0;
     display: inline-block;
     padding: 180px 150px 170px;
     text-align: left;
+    vertical-align: text-bottom;
 }
 .colRight2 {
     display: inline-block;
     width: 41%;
+    margin: 0 -4px -4px 0;
     height: 730px;
     background-color: rgb(236, 236, 236);
 }
@@ -25,6 +29,27 @@
     height: 730px;
 
 }
+.mainTextSec2{
+    margin: 0 auto 90px;
+    font-size: 40px;
+}
+.mainTextSec2::before {
+    color: red;
+    display: block;
+    content: 'NEW DISIGN';
+    font-size: 16px;
+}
+.textSec2 {
+    margin: 0 auto 20px;
+}
+.textSec2Btm::after {
+    content: '....';
+    color: red;
+    font-size: 30px;
+    padding: 0 0 0 10px;
+    
+}
+
 .main3 {
     max-width: 100%;
     max-height: 100%;
