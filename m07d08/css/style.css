@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'bloom';
+    src: url(../fonts/MajorMonoDisplay-Regular.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+h1 {
+    font-family: 'bloom', sans-serif;
+    font-weight: 100;
+}
