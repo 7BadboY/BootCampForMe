@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    background-image: linear-gradient(#0000009a, #0000009a), url(../img/MainBG.png);
+    background-position: center;
+    background-size: cover;
+}
+.wrapper {
+    max-width: 480px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.logoGolden {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin: 0 auto 20px;
+
+}
+.logoGolden a {
+    color: #fed136;
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+
+}
+.menu {
+    list-style: none;
+    margin: 0 auto 150px;
+}
+.menuItems a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.welcome {
+    font-style: italic;
+    margin: 0 auto 10px;
+}
+.meetYou {
+    text-transform: uppercase;
+    margin: 0 auto 150px;
+}
+.tellMeMore {
+    width: 240px;
+    height: 60px;
+    background-color: #fed136;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin: 0 auto 50px;
+}
+.services {
+padding: 20px 0 0 0;
+text-align: center;
+}
+.TopMainText {
+    text-transform: uppercase;
+}
+.bottomMainText {
+    font-style: italic;
+    margin: 0 auto 20px;
+}
+.E_Commerce::before {
+    content: '';
+    display: block;
+    width: 68px;
+    height: 67px;
+    border: 2px solid #fed136;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url(../img/Pic1Ser.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ResponsiveWeb::before {
+    content: '';
+    display: block;
+    width: 68px;
+    height: 67px;
+    border: 2px solid #fed136;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url(../img/Pic2Ser.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.WebSecurity::before {
+    content: '';
+    display: block;
+    width: 68px;
+    height: 67px;
+    border: 2px solid #fed136;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url(../img/Pic3Ser.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.servicesItems h3{
+    margin: 0 auto 10px;
+}
+.servicesItems p {
+    margin: 0 auto 30px;
+}
