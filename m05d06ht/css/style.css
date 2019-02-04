@@ -7,7 +7,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    outline: 1px solid red;
 }
 
 body {
@@ -29,13 +28,18 @@ body {
     float: left;
 }
 
+.menuItems:hover a {
+    color: rgb(26, 188, 156);
+    cursor: pointer;
+}
+
 .menuItems a {
     text-decoration: none;
     list-style: none;
     padding: 0 0 0 40px;
     color: rgb(15, 1, 1);
     text-transform: uppercase;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .clearfix::after {
@@ -49,10 +53,16 @@ body {
     text-transform: uppercase;
 }
 
+.mainLogo:hover a {
+    color: rgb(26, 188, 156);
+    cursor: pointer;
+}
+
 .mainLogo a {
     text-decoration: none;
     font-size: 40px;
     line-height: 0;
+    color: black;
 }
 
 .mainLogo::before {
@@ -158,21 +168,21 @@ body {
 .contentInfo {
     position: relative;
     display: inline-block;
-    width: 22.972972973%;
+    width: 255px;
     height: 322px;
     margin: 0 26px 100px 0;
     text-align: center;
-    background-color: white;
 }
+
 .contentInfo:last-child {
     margin-right: 0;
 }
-.contentInfo img {
-    height: 322px;
-    width: 255;
-    margin: 0 0 -3px 0;
+
+.contentPicture {
+    margin: 0 0 -5px 0;
 }
-.contentInfo h3{
+
+.contentName {
     display: inline-block;
     width: 70%;
     height: 40px;
@@ -183,7 +193,8 @@ body {
     padding: 10px 0 0 0;
 
 }
-.contentInfo p {
+
+.contentPrice {
     display: inline-block;
     width: 30%;
     height: 40px;
@@ -192,31 +203,132 @@ body {
     font-size: 25px;
     padding: 5px 0 0 0;
 }
-.contentOption {
-    
-}
-.like {
+
+.contentOptions {
+    width: 255px;
+    height: 322px;
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
+    top: 0;
+    border: 10px solid rgba(255, 255, 255, 0.6);
+    padding: 80px 35px 75px 35px;
+    opacity: 0;
+    margin: 0 0 -5px 0;
+}
+
+.like {
     display: inline-block;
     width: 50px;
     height: 50px;
-    bottom: 0;
-    border: none;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
     cursor: pointer;
     background-color: transparent;
     background-image: url(../img/likebutton.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-/* .visuali-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-} */
+
+.like:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+.compare {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(../img/compareArows.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.compare:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+.timer {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(../img/clockbutton.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.timer:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+.AddToCard {
+    display: block;
+    width: 166px;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+
+}
+
+.AddToCard:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+.AddToCard h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 30px;
+
+}
+
+.AddToCard h4::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/cardbutton.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.like,
+.compare {
+    margin: 0 3px 10px 0;
+}
+
+.contentInfo:hover .contentOptions {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contentInfo:hover .contentPrice {
+    background-color: rgb(127, 217, 199);
+}
+
+.contentInfo:hover .contentName {
+    background-color: rgb(26, 188, 156);
+}
+
+.rights {
+    height: 85px;
+    padding: 35px 0 35px 0;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    color: white;
+}
+
+.Graph {
+    color: rgb(70, 191, 169);
+}
