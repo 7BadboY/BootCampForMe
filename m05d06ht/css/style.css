@@ -156,18 +156,21 @@ body {
 }
 
 .contentInfo {
+    position: relative;
     display: inline-block;
-    width: 255px;
+    width: 22.972972973%;
     height: 322px;
     margin: 0 26px 100px 0;
     text-align: center;
+    background-color: white;
 }
 .contentInfo:last-child {
     margin-right: 0;
 }
 .contentInfo img {
+    height: 322px;
+    width: 255;
     margin: 0 0 -3px 0;
-    position: relative;
 }
 .contentInfo h3{
     display: inline-block;
@@ -189,16 +192,18 @@ body {
     font-size: 25px;
     padding: 5px 0 0 0;
 }
+.contentOption {
+    
+}
 .like {
-    display: inline-block;
     position: absolute;
+    display: inline-block;
     width: 50px;
     height: 50px;
-    bottom: -100px;
+    bottom: 0;
     border: none;
     cursor: pointer;
     background-color: transparent;
-    background-color: black;
     background-image: url(../img/likebutton.png);
     background-repeat: no-repeat;
     background-position: center;

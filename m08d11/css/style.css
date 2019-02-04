@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+#first {
+    height: 100vh;
+    background-color: springgreen;
+    width: 100%;
+}
+#second {
+    height: 100vh;
+    background-color: seagreen;
+    width: 100%;
+}
+#third {
+    height: 100vh;
+    background-color: purple;
+    width: 100%;
+}
+
+.left {
+    width: 500px;
+    background-color: black;
+    height: 50vh;
+}
+.right {
+    width: 200px;
+    background-color: rgb(231, 132, 11);
+    height: 50vh;
+    display: none;
+}
+#dropDown:checked ~ .right {
+    display: block;
+}
