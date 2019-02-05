@@ -50,3 +50,6 @@ h4::after {
     background-position: center;
     background-size: cover;
 }
+.flex {
+    display: flex;
+}
