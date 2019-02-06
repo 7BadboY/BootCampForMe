@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    outline: 1px solid 
+    /* outline: 1px solid black; */
 }
 .wrapper {
     width: 1200px;
@@ -13,9 +13,14 @@
     padding: 30px 0 0 0;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto 120px;
 }
 .mainLogo {
     text-decoration: none;
+}
+.mainLogo__title {
+    font-size: 30px;
+    color: rgb(149, 225, 211);
 }
 .menu {
     display: flex;
@@ -23,9 +28,127 @@
 }
 .menuItems {
     display: inline-block;
+    list-style: none;
 
 }
 .menuItems a {
     margin: 0 0 0 60px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(149, 225, 211);
+}
+.mainSection {
+    max-width: 1148px;
+    margin: 0 auto;
+}
+.mainTextConteiner {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.servicesConteiner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.topMainText {
+    margin: 0 auto 25px;
+}
+.bottomMainText {
+    margin: 0 auto 115px;
+}
+.rowTop {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 110px;
+}
+.rowBottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteinerItems {
+    display: flex;
+    padding: 0 40px;
+}
+.itemsTopText {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.bottomMainText_resize_bottMarg {
+    margin-bottom: 80px;
+}
+.conteinerItems__col1 {
+    margin-right: 30px;
+    width: 39px;
+    height: 39px;
+}
+.cardContainerWrapp {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.cardImg__container {
+    position: relative;
+    width: 380px;
+    height: 470px;
+    background-color: rgb(149, 225, 211);
+}
+.cardImg {
+    position: absolute;
+    z-index: 2;
+}
+.cardImg:hover {
+   transform: translate(-10px, -15px);
+   transition: all 200ms ease-out;
+}
+
+.cardOptions {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    display: flex;
+    padding: 70px;
+    justify-content: space-around;
+    align-items: center;
+    background: 
+    linear-gradient(to bottom, 
+    rgba(239, 137, 138,0.8), 
+    rgba(230, 207, 129,0.8));
+    opacity: 0;
+    z-index: 1;
+}
+.cardOptions:hover .cardImg {
+    transform: translate(-10px, -15px);
+    transition: all 200ms ease-out;
+    opacity: 1;
+    z-index: 3;
+}
+.share {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    background-color: rgb(252, 227, 138);
+}
+.facebook {
+    background-image: url(../img/facebook.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.twitter {
+    background-image: url(../img/twitter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pinterest {
+    background-image: url(../img/pinterest.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.istagream {
+    background-image: url(../img/instagram.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
