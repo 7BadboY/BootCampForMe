@@ -1,0 +1,7 @@
+.container-fixed {
+    font-style: italic;
+
+    &__title {
+        font-size: 20px; 
+    }
+}
