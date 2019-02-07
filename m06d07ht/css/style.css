@@ -4,39 +4,47 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
     color: rgb(51, 51, 51);
 }
+
 .navigation {
     padding: 30px 0 0 0;
     display: flex;
     justify-content: space-between;
     margin: 0 auto 120px;
 }
+
 .mainLogo {
     text-decoration: none;
 }
+
 .mainLogo__title {
     font-size: 30px;
     color: rgb(149, 225, 211);
     transition: all 300ms linear;
     font-weight: bold;
 }
-.mainLogo__title:hover{
+
+.mainLogo__title:hover {
     color: rgb(243, 129, 129);
     transition: all 100ms linear;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
 }
+
 .menuItems {
     display: inline-block;
     list-style: none;
 
 }
+
 .menuItems a {
     display: block;
     margin: 0 0 0 60px;
@@ -48,6 +56,7 @@
     transition: all 300ms linear;
     font-size: 14px;
 }
+
 .menuItems a:hover {
     transition: all 100ms linear;
     color: rgb(243, 129, 129);
@@ -58,22 +67,26 @@
     max-width: 1148px;
     margin: 0 auto;
 }
+
 .mainTextConteiner {
     text-align: center;
     margin-bottom: 100px;
 }
+
 .servicesConteiner {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     margin-bottom: 100px;
 }
+
 .topMainText {
     margin: 0 auto 25px;
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
-    
+
 }
+
 .bottomMainText::after {
     content: '';
     display: block;
@@ -83,17 +96,20 @@
     margin: 45px auto 0;
 
 }
+
 .bottomMainText {
     margin: 0 auto 115px;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .rowTop {
     display: flex;
     justify-content: space-around;
     margin-bottom: 110px;
 }
+
 .rowBottom {
     display: flex;
     justify-content: space-around;
@@ -103,31 +119,38 @@
     display: flex;
     padding: 0 40px;
 }
+
 .itemsTopText {
     text-transform: uppercase;
     margin-bottom: 25px;
     font-size: 14px;
 }
+
 .itemsBottomText {
     font-size: 15px;
 }
+
 .bottomMainText_resize_bottMarg {
     margin-bottom: 80px;
 }
+
 .infoCardText {
     font-size: 15px;
     padding: 0 120px 0 120px;
 }
+
 .conteinerItems__col1 {
     margin-right: 30px;
     width: 39px;
     height: 39px;
 }
+
 .cardContainerWrapp {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
 }
+
 .cardContainer {
     position: relative;
 }
@@ -142,7 +165,7 @@
 
 .cardImg {
     position: absolute;
-    
+
 }
 
 .cardOptions {
@@ -152,14 +175,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: 
-    linear-gradient(to bottom, 
-    rgba(239, 137, 138,0.8), 
-    rgba(230, 207, 129,0.8));
+    background:
+        linear-gradient(to bottom,
+        rgba(239, 137, 138, 0.8),
+        rgba(230, 207, 129, 0.8));
     opacity: 0;
     cursor: pointer;
     transition: all 600ms linear;
 }
+
 .cardOptions:hover {
     cursor: pointer;
     opacity: 1;
@@ -174,11 +198,12 @@
     box-shadow: 15px 15px 5px 2px rgb(149, 225, 211);
 }
 
-.cardImg:hover .cardOptions{
+.cardImg:hover .cardOptions {
     transform: translate(-10px, -15px);
     transition: all 200ms linear;
     cursor: pointer;
 }
+
 .share {
     display: inline-block;
     width: 58px;
@@ -186,44 +211,53 @@
     transition: all 200ms linear;
     background-color: rgb(252, 227, 138);
 }
+
 .share:hover {
     background-color: rgb(149, 225, 211);
     transition: all 100ms linear;
 }
+
 .facebook {
     background-image: url(../img/facebook.png);
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .twitter {
     background-image: url(../img/twitter.png);
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .pinterest {
     background-image: url(../img/pinterest.png);
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .istagream {
     background-image: url(../img/instagram.png);
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .topImgtext {
     text-transform: uppercase;
     margin: 0 auto 20px;
     text-align: center;
 }
+
 .bottomImgText {
     text-align: center;
     margin: 0 auto 85px;
 }
+
 .footerConteiner {
     border-top: 1px solid rgb(229, 229, 229);
     display: flex;
     padding: 10px 0 12px;
 }
+
 .input-email {
     height: 40px;
     width: 230px;
@@ -233,10 +267,12 @@
     border: 1px solid rgb(229, 229, 229);
 
 }
+
 input[type="email"] {
     padding-left: 20px;
     color: rgb(229, 229, 229);
 }
+
 .subscribe {
     height: 40px;
     width: 150px;
@@ -246,11 +282,13 @@ input[type="email"] {
     border: none;
     font-size: 14px;
 }
+
 .footerText {
     line-height: 50px;
     margin-right: auto;
     font-size: 14px;
 }
+
 .footerTextLaaq {
     color: rgb(243, 129, 129);
 }
