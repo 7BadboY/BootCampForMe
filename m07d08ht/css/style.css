@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montswrret-bold';
+    src: url("../fonts/montserrat-v12-cyrillic_latin/montserrat-v12-cyrillic_latin-800.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-latin';
+    src: url("../fonts/montserrat-v12-latin/montserrat-v12-latin-800.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Wisdom Script";
+    src: url("../fonts/Wisdom\ Script\ AJ/Wisdom Script AJ.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    src: url("../fonts/DroidSerif/DroidSerif-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    margin: 0 auto 130px;
+}
+
+.mainLogo__title {
+    font-family: "Wisdom Script";
+    font-size: 26px;
+    color: rgb(254, 209, 54);
+
+}
+
+.mainLogo {
+    text-decoration: none;
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menuItems {
+    list-style: none;
+    margin: 0 0 0 40px;
+}
+
+.menuItems a {
+    font-family: 'Montserrat-latin';
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
+}
+
+.menuItems a:hover {
+    color: rgb(254, 209, 54);
+}
+
+.main {
+    text-align: center;
+}
+
+.services-title-container {
+    text-align: center;
+}
+
+.top-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 auto 25px;
+    font-family: 'Montswrret-bold';
+    font-weight: 800;
+    color: rgb(34, 34, 34);
+}
+
+.bottom-title {
+    font-size: 16px;
+    margin: 0 auto 75px;
+    font-family: "Droid Serif";
+    color: rgb(34, 34, 34);
+}
+
+.service-info-conteiner {
+    display: flex;
+}
+
+.services-topTitle::before {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgb(254, 209, 54);
+    border-radius: 50%;
+    margin: 0 auto 25px;
+}
+
+.col-1::before {
+    background-image:
+        url(../img/Icon-Basket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.col-2::before {
+    background-image:
+        url(../img/Icon-Laptop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.col-3::before {
+    background-image:
+        url(../img/Icon-Locked.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.services-topTitle {
+    margin: 0 auto 20px;
+    font-family: 'Montswrret-bold';
+    color: rgb(34, 34, 34);
+}
+
+.services-bottomTitle {
+    margin: 0 auto 120px;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    padding: 0 10px;
+    color: rgb(34, 34, 34);
+}
+
+.colorTitle-white {
+    color: rgb(255, 255, 255);
+}
+
+.contact-section {
+    background-image: url(../img/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0 110px 0;
+
+}
+
+.container-form {
+    display: flex;
+}
+
+.name-email-title {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name-email-title input {
+    min-width: 80%;
+    height: 50px;
+    margin: 0 30px 30px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.type-text {
+    min-width: 50%;
+}
+
+.type-text textarea {
+    height: 210px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+.botton-container {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input[type="email"] {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-family: 'Montswrret-bold';
+}
+
+input[type="text"]:invalid:not(:placeholder-shown) {
+    outline: 3px solid #ff0000;
+}
+
+input[type="text"]:valid:not(:placeholder-shown) {
+    outline: 3px solid #00ff00;
+}
+
+input[type="email"]:invalid:not(:placeholder-shown) {
+    outline: 3px solid #ff0000;
+}
+
+input[type="email"]:valid:not(:placeholder-shown) {
+    outline: 3px solid #00ff00;
+}
+
+input[type="text"] {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-family: 'Montswrret-bold';
+}
+
+textarea[name="message"] {
+    padding: 20px 20px;
+    text-transform: uppercase;
+    font-family: 'Montswrret-bold';
+}
+
+.btm-masg {
+    text-transform: uppercase;
+    width: 240px;
+    height: 65px;
+    background-color: rgb(254, 209, 54);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Montswrret-bold';
+    cursor: pointer;
+}
