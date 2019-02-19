@@ -1,33 +1,100 @@
 'use strict'
 
-const adminLogin = 'admin';
-const adminPassword = 'm4ngo1zh4ackz0r';
 
-const adminLoginAccessSkiped = 'Отменено пользователем!';
-const adminLoginAccessWrong = 'Доступ запрещен, неверный логин!';
+// const taba = 6;
+// const sharm = 15;
+// const hurgada = 25;
 
-const adminPasswordAccessSkiped = 'Отменено пользователем!';
-const adminPasswordAccessWrong = 'Доступ запрещен, неверный пароль!';
+// let hotel = "";
 
-const adminAccessGreat = 'Добро пожаловать!';
+// const requiredPlaces = prompt('Введите количество мест');
+// if (Number.isInteger(+requiredPlaces) && +requiredPlaces > 0) {
+//   if (+requiredPlaces <= taba){
+//     hotel = "Taba";
+//   }
+//   else if (+requiredPlaces <= sharm) {
+//     hotel = "Sharm";
+//   }
+//   else if (+requiredPlaces <= hurgada) {
+//     hotel = "Hurgada";
+//   }
+//   if (hotel && confirm(`хотите ли вы остаться в ${hotel}?`)) {
+//     alert(`добро пожаловать в ${hotel}`);
+//   } else if(!hotel) {
+//     alert('Извините, столько мест нет ни в одной группе!');
+//   } else {
+//     alert ('Нам очень жаль, приходите еще!');
+//   }
+// } else if (!requiredPlaces) {
+//   alert ('Нам очень жаль, приходите еще!');
+// }
 
-const login = prompt('enter your login');
 
-if (login === null) {
-    alert (adminLoginAccessSkiped);
-} else if (login !== adminLogin) {
-    alert (adminLoginAccessWrong);
-} else {
-    const password = prompt('enter your password');
+// const sharm = 15;
+// const hurgada = 25;
+// const taba = 6;
 
-if (password === null) {
-    alert (adminPasswordAccessSkiped);
-} else if (password !== adminPassword) {
-    alert (adminPasswordAccessWrong);
-} else {
-    alert (adminAccessGreat);
- }
-} 
+// let hotel = "";
+
+// const requiredPlaces = prompt('Введите количество мест');
+// if (Number.isInteger(+requiredPlaces) && +requiredPlaces > 0) {
+//   if (+requiredPlaces <= sharm){
+//     if (confirm('хотите ли вы остаться в Sharm?')) {
+//       alert('добро пожаловать в Sharm');
+//     } else {
+
+//       alert ('Нам очень жаль, приходите еще!');
+//     }
+//   }
+//   else if (+requiredPlaces <= hurgada) {
+//     if (confirm('хотите ли вы остаться в Hurgada?')) {
+//       alert('добро пожаловать в Hurgada');
+//     } else {
+
+//       alert ('Нам очень жаль, приходите еще!');
+//     }
+//   }
+//   else if (+requiredPlaces <= taba) {
+//     if (confirm('хотите ли вы остаться в Taba?')) {
+//       alert('добро пожаловать в Taba');
+//     } else {
+
+//       alert ('Нам очень жаль, приходите еще!');
+//     }
+//   }
+
+// } else if (!requiredPlaces) {
+//   alert ('Нам очень жаль, приходите еще!')
+// }
+
+// const adminLogin = 'admin';
+// const adminPassword = 'm4ngo1zh4ackz0r';
+
+// const adminLoginAccessSkiped = 'Отменено пользователем!';
+// const adminLoginAccessWrong = 'Доступ запрещен, неверный логин!';
+
+// const adminPasswordAccessSkiped = 'Отменено пользователем!';
+// const adminPasswordAccessWrong = 'Доступ запрещен, неверный пароль!';
+
+// const adminAccessGreat = 'Добро пожаловать!';
+
+// const login = prompt('enter your login');
+
+// if (login === null) {
+//     alert (adminLoginAccessSkiped);
+// } else if (login !== adminLogin) {
+//     alert (adminLoginAccessWrong);
+// } else {
+//     const password = prompt('enter your password');
+
+// if (password === null) {
+//     alert (adminPasswordAccessSkiped);
+// } else if (password !== adminPassword) {
+//     alert (adminPasswordAccessWrong);
+// } else {
+//     alert (adminAccessGreat);
+//  }
+// } 
 
 
 
