@@ -135,23 +135,73 @@
 // }
 
 // console.log(longestWord);
-// // ---------------------------------------------------------------------------------------------------------
+// // // ---------------------------------------------------------------------------------------------------------
 
-let arr = [];
-let ask;
-let sum = 0;
-do {
-    let ask = Number(prompt('Enter number'));
-    if (ask !== 0) {
-        arr.push(ask);
-    }
-    console.log(ask);
-    console.log(arr);
-}while(ask);
+// let arr = [];
+// let ask;
+// let sum = 0;
+// do {
+//     let ask = Number(prompt('Enter number'));
+//     if (ask !== 0) {
+//         arr.push(ask);
+//     }
+//     console.log(ask);
+//     console.log(arr);
+// }while(ask);
 
-if(arr.length !== 0) {
-    for (const iteration of arr) {
-        sum += iteration;
-    }
-}
-console.log("the sum is" + sum);
+// if(arr.length !== 0) {
+//     for (const iteration of arr) {
+//         sum += iteration;
+//     }
+// }
+// console.log("the sum is" + sum);
+// -------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+// Дополнительное домашнее задание.
+// // -------------------------------------------------------------------------------------------------------------
+// const numbers = [12, 15, 25, 37, 41];
+// const min = numbers[0];
+// const max = numbers[numbers.length-1];
+
+// const answer = Number (prompt(`Enter number form ${min} to ${max}!`));
+// if (Number.isNaN(answer)) {
+//     alert ('Было введено не число');
+// }
+// else {
+//     if (numbers.includes(answer)) {
+//         alert ('Поздравляем вы угадали');
+//     }
+//     else {
+//         alert (`Сожалеем, Вы не угадали ${answer} `);
+//     }
+// }
+// // --------------------------------------------------------------------------------------------------------------
+
+
+// Домашнее задание дополнительное
+// 
+
+// const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd']
+// let attempts = 3;
+// let inputPassword 
+// do { 
+//     inputPassword = prompt('Enter password:');
+//     if (passwords.includes(inputPassword)) {
+//         alert('Добро пожаловать!');
+//         break;
+//     }
+//     else if (inputPassword !== null){
+//         attempts -= 1;
+//         if(attempts > 0){
+//             alert (`Неверный пароль, у вас осталось ${attempts} попыток`);
+//         }
+//         else {
+//             alert('У вас закончилилсь попитки, акаунт заблокирован!');
+//         }
+//     }
+// }   while (attempts > 0 && inputPassword !== null);
+// // ---------------------------------------------------------------------------------------------------------------------------------------------------------
