@@ -1,4 +1,5 @@
-// // // // // 'use strict'
+'use strict'
+
 
 // // // // // var year = 2018;
 // // // // // let month = 'November';
@@ -75,7 +76,7 @@
 // // const result = num > 30 || num > 10;
 // // console.log(result); // ии. При условии что НАМ меньше 30 и меньше 10, Фалс
 
-// const obj = {
+// ??const obj = {
 // id: 'merge',
 // name: 'Sergey',
 // role: 'admin',
@@ -98,9 +99,9 @@
 //     alert('go away');
 // }
 
-let value = 0;
-value += 50;
-value += 50;
-value -= 30;
+// let value = 0;
+// value += 50;
+// value += 50;
+// value -= 30;
 
-console.log('value', value);
+// console.log('value', value);

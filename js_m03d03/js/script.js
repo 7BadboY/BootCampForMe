@@ -149,3 +149,51 @@
 //   return ( str.toLowerCase().includes('spam') || str.toLowerCase().includes('sale'))
 // }
 
+// // --------------------------Пример стрелочной функции----------------------
+
+// const double = val => val * 2;
+// const triple = val => val * 3;
+// const numbers = [1, 2, 3, 4, 5];
+
+// const map = (arr, callback) => { // Обьявляем функцию с аргументами arr(массивом), callback(функции)
+//     const resultArr = []; // обьявляем пустой массив, в который будет записывать новые эл-ты
+//     // перебираем, входящий при вызове функции массив, записывай в аргумент arr. 
+//     // в теле цикла елементы пропускаем через функцию callbrck, обьявленную в аргументах
+//     // и записываем результат callback-функции в переменную rezult.
+//     // последним этапом цикла - записывает result в новый массив, выходим из массива.
+//     // последним этапом map будет возврат (return) переменной resultArr.
+//     for(const element of arr) {
+//       const result = callback(element);
+//       resultArr.push(result);
+//     }
+//     return resultArr;
+//   };
+//   const double = val => val * 2;
+//   const triple = val => val * 3;
+//   const numbers = [1, 2, 3, 4, 5];
+//   const doubledNumbers = map(numbers, double);
+//   console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+//   const tripledNumbers = map(numbers, triple);
+//   console.log(tripledNumbers); // [3, 6, 9, 12, 15]
+// ////------------------------------------------------------------------------------------------------////
+
+
+const ourArray = (transfer,mass) => {
+    let newMass = [];
+    for (const numb of mass) {
+        const newElement = transfer (numb);
+        newMass.push(newElement);
+    }
+    return newMass;
+};
+const double = (number) => number *2;
+const triple = (number) => number *3;
+
+const numbers = [1, 2, 3, 4, 5];
+
+const doubledNumbers = ourArray (double, numbers);
+console.log(doubledNumbers);
+
+const tripledNumbers = ourArray(triple, numbers);
+console.log(tripledNumbers);
+
