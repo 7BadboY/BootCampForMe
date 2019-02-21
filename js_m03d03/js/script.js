@@ -148,3 +148,4 @@
 //   // }
 //   return ( str.toLowerCase().includes('spam') || str.toLowerCase().includes('sale'))
 // }
+
