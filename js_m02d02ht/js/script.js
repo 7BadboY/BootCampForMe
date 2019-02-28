@@ -132,24 +132,24 @@
     скрипт выводит сумму всех значений массива: "Сумма: <сумма всех значений в массиве>"
     Используйте цикл for...of
 */
-let enterNumber;
-let arr = [];
+// let enterNumber;
+// let arr = [];
 
-do { 
-    enterNumber= prompt('Enter the number');
-    if (enterNumber !== null) {
-    arr.push(Number(enterNumber));
-        console.log(arr);
-    }
-} while (enterNumber !== null); 
+// do { 
+//     enterNumber= prompt('Enter the number');
+//     if (enterNumber !== null) {
+//     arr.push(Number(enterNumber));
+//         console.log(arr);
+//     }
+// } while (enterNumber !== null); 
 
-let sum = 0;
-if (arr.length > 0) {
-for (let input of arr) {
-    sum = sum + input;
-}
-console.log(`'suma vsex chisel: ' ${sum}`);
-}
+// let sum = 0;
+// if (arr.length > 0) {
+// for (let input of arr) {
+//     sum = sum + input;
+// }
+// console.log(`'suma vsex chisel: ' ${sum}`);
+// }
 
 
 // ______________________________________________________________Задание 9______________________________________________________________

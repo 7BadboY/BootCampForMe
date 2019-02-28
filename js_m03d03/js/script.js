@@ -149,6 +149,177 @@
 //   return ( str.toLowerCase().includes('spam') || str.toLowerCase().includes('sale'))
 // }
 
+
+// ____________________________________Задание 4________________________________________
+
+// /*  
+//   Написать функцию, getPx(str) 
+
+//   Функция getPx должна получать строку вида '10px',
+//   проверять была ли передана строка, если да, 
+//   возвращать только числовую составляющую, к примеру 10.
+    
+//   Если была передана не строка, функция возвращает null.
+// */
+// function getPx(str) {
+//     if  (typeof str === "string") {
+//         return parseFloat(str);
+//     } 
+//     return null;
+// }
+
+// // Вызовы функции для проверки
+// console.log( getPx("10px") === 10 ); // должно быть:  true
+// console.log( getPx("10.5") === 10.5 ); // должно быть:  true
+// console.log( getPx("0") === 0 ); // должно быть:  true
+// console.log( getPx(-1) ); // должно быть:  null
+// console.log( getPx(10) ); // должно быть:  null
+
+
+// _____________________________________Задание 5____________________________________________
+
+/*  
+  Создайте фукнцию findLongestWord(str),
+  которая получает аргументом произвольную строку и
+  возвращает самое длинное слово в этой строке.   
+  
+  Важное условие - в строке могут быть только пробелы,
+  символы букв и цифр!
+*/
+
+
+// function findLongestWord(str) { 
+//     let arr = str.split(' ');
+//     let longWord = arr[0];
+    
+// for (let newArr of arr) {
+//     if (newArr.length > longWord.length){ 
+//      longWord = newArr;
+//         }
+
+// }
+// return longWord;
+// }
+
+// // Вызовы функции для проверки
+// console.log(
+//     findLongestWord("The quick brown fox jumped over the lazy dog")
+//   ); // вернет 'jumped'
+  
+//   console.log(
+//     findLongestWord("Google do a roll")
+//   ); // вернет 'Google'
+  
+//   console.log(
+//     findLongestWord("May the force be with you")
+//   ); // вернет 'force'
+  
+// _____________________________________Задание 6____________________________________________
+
+/*  
+  Создайте функцию findLargestNumber(numbers), 
+  которая получает массив чисел numbers, и возвращает 
+  самое большое число в массиве.
+*/
+
+// function findLargestNumber(numbers) {
+//     let max = 0;
+//     for (let num of numbers) {
+//         if (num > max) {
+//             max = num; 
+
+//         }
+//     }
+// return (max);
+// }
+
+// // Вызовы функции для проверки
+// console.log(
+//     findLargestNumber([1, 2, 3])
+//   ); // вернет 3
+  
+//   console.log(
+//     findLargestNumber([27, 12, 18, 5])
+//   ); // вернет 27
+  
+//   console.log(
+//     findLargestNumber([31, 128, 14, 74])
+//   ); // вернет 128
+  
+// ____________________________________Задание 7_____________________________________________
+
+/*  
+  Есть массив уникальных чисел uniqueNumbers.
+  
+  Написать функцию, addUniqueNumbers(...), 
+  которая получает произвольное кол-во чисел как аргументы, 
+  и добавляет в массив uniqueNumbers только уникальные,
+  а те которые в массиве уже есть игнорирует.
+*/
+
+// const uniqueNumbers  = [2, 1, 4, 9];
+
+// function addUniqueNumbers (){
+//     let arr = arguments;
+//     for(let index of arr) {
+//         if (!uniqueNumbers.includes(index)) {
+//             uniqueNumbers.push(index)
+//         }
+//     }
+
+// }
+// // Вызовы функции для проверки
+// addUniqueNumbers(1, 2, 3);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3]
+
+// addUniqueNumbers(12, 2, 3, 19);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3, 12, 19]
+
+// addUniqueNumbers(4, 5, 12, 3, 1, 2, 8);
+// console.log(
+//   uniqueNumbers
+// ); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
+
+// _____________________________________Задание 8____________________________________
+
+/*
+  Напишите функцию filterFromArray(arr), которая 
+  объявляет 1 параметр, исходный массив arr.
+  
+  При вызове функции, первым аргументом всегда будет массив чисел,
+  за которым следуют один или несколько аргументов, тоже чисел. 
+  
+  Функция возвращает новый массив, который содержит только 
+  те элементы исходного массива, которые не совпадают 
+  ни с одним из числовых аргументов.
+*/
+
+// const filterFromArray = function(arr, ...args) {
+
+//     for(let input of args) {
+//         if (arr.includes(input)) {
+//             let index = arr.indexOf(input);
+//             arr.splice(index, 1);
+//         }
+//     }
+//   return arr;
+// }; 
+
+// // Вызовы функции для проверки
+// console.log(
+//   filterFromArray([1, 2, 3, 4, 5], 2, 4)
+// ); // [1, 3, 5]
+
+// console.log(
+//   filterFromArray([12, 4, 3, 8, 17], 3, 29, 18, 4)
+// ); // [12, 8, 17]
+
+
+
 // // --------------------------Пример стрелочной функции----------------------
 
 // const double = val => val * 2;
@@ -178,22 +349,22 @@
 // ////------------------------------------------------------------------------------------------------////
 
 
-const ourArray = (transfer,mass) => {
-    let newMass = [];
-    for (const numb of mass) {
-        const newElement = transfer (numb);
-        newMass.push(newElement);
-    }
-    return newMass;
-};
-const double = (number) => number *2;
-const triple = (number) => number *3;
+// const ourArray = (transfer,mass) => {
+//     let newMass = [];
+//     for (const numb of mass) {
+//         const newElement = transfer (numb);
+//         newMass.push(newElement);
+//     }
+//     return newMass;
+// };
+// const double = (number) => number *2;
+// const triple = (number) => number *3;
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-const doubledNumbers = ourArray (double, numbers);
-console.log(doubledNumbers);
+// const doubledNumbers = ourArray (double, numbers);
+// console.log(doubledNumbers);
 
-const tripledNumbers = ourArray(triple, numbers);
-console.log(tripledNumbers);
+// const tripledNumbers = ourArray(triple, numbers);
+// console.log(tripledNumbers);
 
