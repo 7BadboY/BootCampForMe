@@ -171,99 +171,382 @@
 // // __________________________________________________________________________________________________
 
 // ____________________________________Module_04_home_work____________________________________________
-const products = {
-  bread: 10,
-  milk: 15,
-  apples: 20,
-  chicken: 50,
-  cheese: 40,
-};
+// const products = {
+//   bread: 10,
+//   milk: 15,
+//   apples: 20,
+//   chicken: 50,
+//   cheese: 40,
+// };
 
 
 
-function Cashier(name, productDatabase) {
-  this.name = name;
-  this.productDatabase = productDatabase;
-  this.totalPrice = 0;
-  this.customerMoney = 0;
-  this.changeBalance = 0;
+// function Cashier(name, productDatabase) {
+//   this.name = name;
+//   this.productDatabase = productDatabase;
+//   this.totalPrice = 0;
+//   this.customerMoney = 0;
+//   this.changeBalance = 0;
 
-  this.countTotalPrice = function(order){
-      for(let key in order) {
-        this.totalPrice += order[key] * this.productDatabase[key];
-      }
-      return this.totalPrice;
-  };
-  this.getCustomerMoney = function(value) {
-    this.customerMoney = value;
-  };
-  this.countChange = function() {
-    if (this.totalPrice > this.costomerMoney) {
-      return null;
-    }
-    this.changeBalance = this.costomerMoney - this.totalPrice;
-    return this.changeBalance;
-  };
-  this.reset = function() {
-    this.totalPrice = 0;;
-    this.costomerMoney = 0;
-    this.changeBalance = 0;
-  };
-//   this.countChange = function(totalPrice) {
-//   if (this.costomerMoney >= totalPrice) {
-//       change = this.costomerMoney - totalPrice;
-//       return change;
-//   } else {
+//   this.countTotalPrice = function(order){
+//       for(let key in order) {
+//         this.totalPrice += order[key] * this.productDatabase[key];
+//       }
+//       return this.totalPrice;
+//   };
+//   this.getCustomerMoney = function(value) {
+//     this.customerMoney = value;
+//   };
+//   this.countChange = function() {
+//     if (this.totalPrice > this.costomerMoney) {
 //       return null;
-//   } 
+//     }
+//     this.changeBalance = this.costomerMoney - this.totalPrice;
+//     return this.changeBalance;
+//   };
+//   this.reset = function() {
+//     this.totalPrice = 0;;
+//     this.costomerMoney = 0;
+//     this.changeBalance = 0;
+//   };
+// //   this.countChange = function(totalPrice) {
+// //   if (this.costomerMoney >= totalPrice) {
+// //       change = this.costomerMoney - totalPrice;
+// //       return change;
+// //   } else {
+// //       return null;
+// //   } 
+// // }
+// };
+
+// const order = {
+//   bread: 2,
+//   milk: 2,
+//   apples: 1,
+//   cheese: 1
+// };
+
+// /* Пример использования */
+// const mango = new Cashier('Mango', products);
+
+// // Проверяем исходные значения полей
+// console.log(mango.name); // Mango
+// console.log(mango.productDatabase); // ссылка на базу данных продуктов (объект products)
+// console.log(mango.customerMoney); // 0
+
+// // Вызываем метод countTotalPrice для подсчета общей суммы
+// // передавая order - список покупок пользователя
+// const totalPrice = mango.countTotalPrice(order);
+
+// // Проверям что посчитали
+// console.log(totalPrice); // 110
+
+// // Вызываем getCustomerMoney для запроса денег покупателя
+// mango.getCustomerMoney(300);
+
+// // Проверяем что в поле с деньгами пользователя
+// console.log(mango.customerMoney); // 300
+
+// // Вызываем countChange для подсчета сдачи
+// const change = mango.countChange();
+
+// // Проверяем что нам вернул countChange
+// console.log(change); // 190
+
+// // Проверяем результат подсчета денег
+// if(change !== null) {
+// //  При успешном обслуживании вызываем метод onSuccess
+// mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
+// } else {
+// // При неудачном обслуживании вызываем метод onError   
+// mango.onError(); // Очень жаль, вам не хватает денег на покупки
 // }
-};
 
-const order = {
-  bread: 2,
-  milk: 2,
-  apples: 1,
-  cheese: 1
-};
+// // Вызываем reset при любом исходе обслуживания
+// mango.reset();
 
-/* Пример использования */
-const mango = new Cashier('Mango', products);
+// // Проверяем значения после reset
+// console.log(mango.customerMoney); //0
 
-// Проверяем исходные значения полей
-console.log(mango.name); // Mango
-console.log(mango.productDatabase); // ссылка на базу данных продуктов (объект products)
-console.log(mango.customerMoney); // 0
 
-// Вызываем метод countTotalPrice для подсчета общей суммы
-// передавая order - список покупок пользователя
-const totalPrice = mango.countTotalPrice(order);
+// ____________________________________Модуль 4 допольнительные задание_______________________________
 
-// Проверям что посчитали
-console.log(totalPrice); // 110
+/*  
+  Напишите скрипт, который, для объекта user, последовательно: 
+  
+    - добавляет поле mood со значением 'happy'
+    
+    - заменяет значение hobby на 'javascript'
+    
+    - удаляет свойство premium
+    
+    - выводит содержимое объекта user в формате ключ:значение 
+      используя цикл for...in
+    
+    - выводит содержимое объекта user в формате ключ:значение 
+      используя Object.keys и for...of
+    
+    - выводит содержимое объекта user в формате ключ:значение 
+      используя Object.entries и for...of
+*/
 
-// Вызываем getCustomerMoney для запроса денег покупателя
-mango.getCustomerMoney(300);
+// const user = {
+//   name: "Mango",
+//   age: 20,
+//   hobby: "html",
+//   premium: true
+// };
 
-// Проверяем что в поле с деньгами пользователя
-console.log(mango.customerMoney); // 300
+// user.mood = 'happy';
 
-// Вызываем countChange для подсчета сдачи
-const change = mango.countChange();
+// user.hobby = 'javaScript';
 
-// Проверяем что нам вернул countChange
-console.log(change); // 190
+// delete user.premium;
 
-// Проверяем результат подсчета денег
-if(change !== null) {
-//  При успешном обслуживании вызываем метод onSuccess
-mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
-} else {
-// При неудачном обслуживании вызываем метод onError   
-mango.onError(); // Очень жаль, вам не хватает денег на покупки
+// for (let item in user) {
+//   console.log(`${item}, ${user[item]}`);
+// }
+
+// let arr = Object.keys(user);
+// for (let element of arr) {
+//   console.log(element, ':', user[element]);
+// }
+
+// let arr2 = Object.entries(user);
+// console.log(arr2);
+
+// for (let key of arr2) {
+//   console.log(key[0], ':', key[1]);
+// }
+// ______________________________________Задание 2_____________________________________
+
+// /*
+//   Напиште скрипт который определит и выведет в консоль 
+//   имя сотрудника который выполнил больше всех задач.
+
+//   Сотрудники и кол-во выполненых задач содержатся 
+//   как свойства объекта в формате "имя":"кол-во задач"
+// */
+
+// const tasksCompleted = {
+//   ann: 29,
+//   david: 35,
+//   helen: 1,
+//   lorence: 99
+// };
+
+// let maxNum = 0;
+// let first;
+// for (const keys in tasksCompleted) {
+//   if (tasksCompleted[keys] > maxNum) {
+//     first = keys;
+//     maxNum = tasksCompleted[keys]
+//   }
+//   console.log(keys, maxNum);
+  
+// }
+// console.log(first, maxNum);
+
+// // ______________________________________Задание 3_______________________________________
+
+
+/*  
+  Напишите функцию countProps(obj),
+  считающую кол-во свойств в объекте.
+  Функция возвращает количество свойств.
+*/
+
+// function countProps(obj) {
+//   let count = 0;
+//   for (let elem in obj) {
+//     count++;
+//   }
+//   return count;
+// }
+
+
+// // Вызовы функции для проверки
+// console.log(
+//   countProps({})
+// ); // 0
+
+// console.log(
+//   countProps({a: 1, b: 3, c: 'hello'})
+// ); // 3
+
+// // ________________________________________________Задание 4_________________________________
+
+/*  
+  Создайте функцию isObjectEmpty(obj), которая получает 
+  один аргумент obj - объект, и проверяет пуст ли он (есть ли в нем свойства).
+  
+  Возвращает true если объект пустой, false если не пустой.
+*/
+
+// function isObjectEmpty(obj) {
+//   let arr = Object.keys(obj);
+//   if (arr.length === 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// // Вызовы функции для проверки
+// console.log(
+//   isObjectEmpty({})
+// ); // true
+
+// console.log(
+//   isObjectEmpty({a: 1})
+// ); // false
+
+// console.log(
+//   isObjectEmpty({a: 1, b: 2})
+// ); // false
+
+// __________________________________________________Задание 5______________________________________
+/*  
+  Напишите функцию countTotalSalary(salaries),
+  получающую объект и считающую общую сумму запрплаты работников.
+  
+  Каждое поле объекта передаваемого в функцию, имеет вид "имя":"зарплата"
+  
+  Функция возвращает общую сумму зарплаты.
+*/
+
+// function countTotalSalary (salaries) {
+
+//   let sum = 0;
+//   let arr = Object.values(salaries);
+//   for (let elem of arr) {
+//     sum += elem;
+//   }
+//   return sum;
+// }
+
+// // Вызовы функции для проверки
+// console.log(
+//   countTotalSalary({})
+// ); // 0
+
+// console.log(
+//   countTotalSalary({
+//     mango: 100,
+//     poly: 150,
+//     alfred: 80
+//   })
+// ); // 330
+
+// // _______________________________________Задание 6____________________________________
+
+
+/*  
+  Напишите функцию getAllPropValues(arr, prop), 
+  которая получает массив объектов и имя ключа, 
+  возвращает массив значений определенного поля prop
+  из каждого объекта в массиве
+*/
+
+// const users = [
+//   { name: 'Poly', age: 7, mood: 'happy' },
+//   { name: 'Mango', age: 4, mood: 'blissful'},
+//   { name: 'Ajax', age: 3, mood: 'tired' }
+// ];
+
+// function getAllPropValues(arr, prop) {
+//   let arrOfprops = [];
+//   for (let obj of arr) {
+//     if(obj.hasOwnProperty(prop)) {
+//     arrOfprops.push(obj[prop]);
+//   }
+// }
+//   return arrOfprops;
+// }
+
+  
+
+// // Вызовы функции для проверки
+// console.log(
+//   getAllPropValues(users, 'name')
+// ); // ['Poly', 'Mango', 'Ajax']
+
+// console.log(
+//   getAllPropValues(users, 'mood')
+// ); // ['happy', 'blissful', 'tired']
+
+// console.log(
+//   getAllPropValues(users, 'active')
+// ); // []
+// _______________________________________Задание 7______________________________
+
+
+/*  
+  Напишите код, который бы  с помощью 
+  функции-конструкора User, позволял создавать 
+  объекты пользователя со следующим свойствами:
+    - name - строка (имя)
+    - isActive - буль (активен)
+    - age - число (возраст)
+    - friends - число (кол-во друзей)
+
+  Имя, активность, возраст и друзей, необходимо передать 
+  как аргументы при вызове конструктора.
+  
+  Добавить метод getUserInfo(), которая, выводит строку:
+  `User ${имя} is ${возраст} years old and has ${кол-во друщзей} friends`
+
+  Создать несколько объектов пользователя User и с помощью 
+  функции getUserInfo вывести строку в консоль.
+*/
+
+
+// const User = function(name, isActive, age, friends) {
+//   this.name = name;
+//   this.isActive = isActive;
+//   this.age = age;
+//   this.friends = friends;
+//   this.getUserInfo = function() {
+//     console.log(`User ${name} is ${age} years old and has ${friends} friends`);
+    
+//   }
+// }
+
+// let user = new User('Sergey', true, 30, 7)
+// console.log(user)
+// console.log();
+// ______________________________________Задание 9____________________________________________
+
+/*  
+  Расставьте отсутствующие this в конструкторе объектов Account
+*/
+
+function Account(login, password, type = "regular") {
+  this.login = login;
+  this.password = password;
+  this.type = type;
+
+  this.changePassword = function(newPassword) {
+    this.password = newPassword;
+
+    console.log(this.password);
+  };
+
+  this.getAccountInfo = function() {
+    console.log(`
+      Login: ${this.login}, 
+      Pass: ${this.password}, 
+      Type: ${this.type}
+    `);
+  };
 }
 
-// Вызываем reset при любом исходе обслуживания
-mango.reset();
+const account = new Account("Mango", "qwe123", "premium");
 
-// Проверяем значения после reset
-console.log(mango.customerMoney); //0
+console.log(account.login); // 'Mango'
+console.log(account.password); // 'qwe123'
+console.log(account.type); // 'premium'
+
+account.changePassword("asdzxc"); // 'asdzxc'
+
+account.getAccountInfo(); // Login: 'Mango', Pass: 'asdzxc', Type: 'premium'
+
